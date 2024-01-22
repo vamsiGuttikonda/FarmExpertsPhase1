@@ -1,19 +1,40 @@
 import { SimpleGrid } from '@chakra-ui/react'
 import React from 'react'
+import ProductCard from '../../product-card/ProductCard'
 
 const ProductGrid = () => {
   return (
     <SimpleGrid
-    columns={{sm:'2',md:'3',lg:'3'}}
-    columnGap={{
-        base: '4',
-        md: '6',
-      }}
-      rowGap={{
-        base: '8',
-        md: '10',
-      }}
-    />
+    px={5}
+    placeItems='center'
+  columns={{sm:'2',md:'3',lg:'3'}}
+  
+    rowGap={{
+      base: '8',
+      md: '15',
+      lg:'12'
+    }}
+  >
+    <ProductCard maxWidth='lg'/>
+    <ProductCard maxWidth='lg'/>
+
+    <ProductCard maxWidth='lg'/>
+
+
+    <ProductCard maxWidth='lg'/>
+
+    <ProductCard maxWidth='lg'/>
+
+    <ProductCard maxWidth='lg'/>
+
+    <ProductCard maxWidth='lg'/>
+
+    <ProductCard maxWidth='lg'/>
+
+    <ProductCard maxWidth='lg'/>
+
+  </SimpleGrid>
+
 
 
   )

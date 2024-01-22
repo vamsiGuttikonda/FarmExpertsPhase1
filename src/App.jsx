@@ -11,6 +11,7 @@ import TopDiscount from './components/common/TopDiscount'
 import './App.css'
 import 'slick-carousel/slick/slick.css'; // Import slick styles here
 import 'slick-carousel/slick/slick-theme.css';
+import ProductDetails from './pages/singleProductPage/ProductDetails'
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/cart' element={<CartPage/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/productview' element{<ProductDetails/>}/>
         <Route path='*' element={<Error/>}/>
 
         
