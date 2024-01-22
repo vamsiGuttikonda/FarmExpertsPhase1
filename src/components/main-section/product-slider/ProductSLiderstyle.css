@@ -1,0 +1,8 @@
+
+  .product-carousel .slick-slide {
+    width: 300px !important;
+    
+  }
+  .product-carousel .slick-list{
+    padding: 0 10px;
+  }
