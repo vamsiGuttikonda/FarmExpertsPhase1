@@ -17,9 +17,12 @@ import {
 } from '@chakra-ui/react';
 import { PiBagSimpleLight } from "react-icons/pi";
 import CartContent from './CartContent';
+import {  useSelector } from 'react-redux';
+import { selectCartItems } from '../../redux-toolkit/feautures/product/cartSlice';
 
 function Cart() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const cartItems=useSelector(selectCartItems)
 
   return (
     <>
@@ -67,12 +70,12 @@ function Cart() {
               overflowX='hidden'
               overflowY='auto'
             >
-              <CartContent />
-              <CartContent />
-              <CartContent />
-              <CartContent />
-              <CartContent />
-              <CartContent />
+              {/* map the cartItems to get the items in cart */}
+                  {
+                    cartItems.map((item,index)=>(
+                      <CartContent key={index} item={item} />
+                    ))
+                  }
             </Flex>
             <Flex h='25%' w='100%' overflow='hidden' className='cart-footer-section' borderTop='gray.200' borderWidth='1px' direction='column' >
               <Flex align='center'  px='4' pt='2'  fontSize='1.3rem' letterSpacing='0.1rem' my='auto'>
