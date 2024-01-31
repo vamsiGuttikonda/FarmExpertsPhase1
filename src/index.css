@@ -1,0 +1,32 @@
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box!important;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    overflow-x: hidden;
+  }
+img{
+  display: block;
+  max-width: 100%;
+}
+html{
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  width: 100vw;
+}
+@media(prefers-reduced-motion: no-preferences){
+  html{
+    scroll-behavior: smooth;
+  }
+}
+:focus:not(:focus-visible){
+  outline: none;
+}
+/* label,button,select,summary,[type=radio],[type=submit],[type=checkbox]{
+  cursor: pointer;
+} */

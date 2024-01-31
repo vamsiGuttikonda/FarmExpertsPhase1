@@ -1,0 +1,17 @@
+
+  .App .slick-slide {
+    width: 300px !important;
+    
+  }
+  .App .slick-slide {
+    margin: 0 15px;
+}
+
+/* the parent */
+.App .slick-list {
+    margin: 0 15px;
+}
+.App .slick-track {
+  display: flex;
+  gap: 1rem;
+}
