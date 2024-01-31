@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdCurrencyRupee } from "react-icons/md";
 
-const RupeeCurrencyIcon = () => {
+const RupeeCurrencyIcon = ({...props}) => {
   return (
     <MdCurrencyRupee 
                 style={{

@@ -1,3 +1,5 @@
+
+
 *,
 *::before,
 *::after {
@@ -15,6 +17,7 @@ img{
 html{
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  width: 100vw;
 }
 @media(prefers-reduced-motion: no-preferences){
   html{

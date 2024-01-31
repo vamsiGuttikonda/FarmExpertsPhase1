@@ -16,7 +16,7 @@ export const desktopstyle = {
 export const mobilestyle = {
   justify: "space-between",
   align: "center",
-  px: "2rem",
+  px: "1rem",
   py: "1rem",
   display: { base: "flex", lg: "none" },
   borderBottom: "1px",

@@ -1,7 +1,7 @@
 import { Flex, SimpleGrid,Box, Grid } from '@chakra-ui/react'
 import React from 'react'
 import ProductGrid from './ProductGrid'
-import ProductCard from '../../product-card/ProductCard'
+
 
 const Product = () => {
   return (

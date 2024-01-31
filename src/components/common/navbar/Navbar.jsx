@@ -8,7 +8,7 @@ import { navbarstyles } from './styles'
 const Navbar = () => {
   return (
     <>
-    <Box {...navbarstyles} as='header'>
+    <Box {...navbarstyles} as='header' >
         <DesktopNavbar/>
         <MobileNavbar/>
     </Box>

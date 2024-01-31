@@ -4,10 +4,10 @@ import Slider from "react-slick";
 import './ProductSLiderstyle.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProductCard from '../../../product-card/ProductCard';
-import { Text ,Box, HStack, Heading, Link} from '@chakra-ui/react';
+import ProductCard from '../../../components/product-card/ProductCard';
+import {  Box, HStack, Heading, Link} from '@chakra-ui/react';
 
-const ProductCourosel = () => {
+const ProductCourosel = ({products}) => {
     const settings = {
         dots: true,
         infinite: false,
@@ -28,22 +28,12 @@ const ProductCourosel = () => {
 
     <Slider {...settings}>
     
-
-      <ProductCard maxWidth='sm'/>
-      <ProductCard/>
-      <ProductCard/>
-
-      <ProductCard/>
-
-      <ProductCard/>
-      <ProductCard/>
-      <ProductCard/>
-
-      <ProductCard/>
-
-      <ProductCard/>
-      <ProductCard/>
-      <ProductCard/>
+      {
+        products.map((item)=>(
+          <ProductCard key={item.product_id} item={item}/>
+        ))
+      }
+      
 
 
     </Slider>

@@ -3,6 +3,7 @@ import React from 'react'
 import { desktopstyle } from './styles'
 import AppLogo from '../AppLogo'
 import Search from '../search/Search'
+import Cart from '../../cart/Cart'
 
 const DesktopNavbar = () => {
   
@@ -14,7 +15,9 @@ const DesktopNavbar = () => {
         </Stack>
         <Stack direction='row'  gap={5} fontSize='1.5rem'>
             <Box>whishlist</Box>
-            <Box>Cart</Box>
+            <Box>
+              <Cart/>
+            </Box>
             <Link href='/login'>
             <Box>Login</Box>
             </Link>
