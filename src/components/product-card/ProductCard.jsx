@@ -1,38 +1,54 @@
-import {
-  Skeleton,
-  Box,
-  Flex,
-  VStack,
-  Image,
-  Card,
-  Text,
-  Link,
-  HStack,
-  Button,
-  AspectRatio,
-} from "@chakra-ui/react";
+import { Skeleton, Box, Flex, Image, Card, Button } from "@chakra-ui/react";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addToCart,
+  removeFromCart,
+  selectCartItems,
+} from "../../redux-toolkit/feautures/product/cartSlice";
 import ProductDescription from "./ProductDescription";
 import RatingComponent from "./RatingComponent";
 import ProductPice from "./ProductPice";
-import AddToCartButton from "./AddToCartButton";
-import { addToCart } from "../../redux-toolkit/feautures/product/cartSlice";
 
-const ProductCard = ({ item, loading, purpose }) => {
-  const dispatcher = useDispatch();
+export const AddToCartButton = ({ item, ...props }) => {
+  const dispatch = useDispatch();
+  const cartItems = useSelector(selectCartItems);
+  // Check if the item is already in the cart
+  const [isCart, setisCart] = useState(false);
   const handleAddToCart = () => {
-    dispatcher(
+    setisCart(true);
+    dispatch(
       addToCart({
         id: item.product_id,
-        name: item.product_name,
+        image_url: item.image_url,
+        size: item.size,
         price: item.price,
-        size:item.size,
-        image_url:item.image_url
       })
     );
   };
 
+  const handleRemoveFromCart = () => {
+    setisCart(false);
+    dispatch(removeFromCart({ id: item.product_id }));
+  };
+
+  return (
+    <>
+      {!isCart ? (
+        <Button {...props} onClick={handleAddToCart}>
+          Add to cart
+        </Button>
+      ) : (
+        <Button {...props} onClick={handleRemoveFromCart}>
+          Remove from cart
+        </Button>
+      )}
+    </>
+  );
+};
+
+const ProductCard = ({ item, loading, purpose }) => {
   return (
     <Skeleton isLoaded={!loading}>
       <Card
@@ -73,7 +89,7 @@ const ProductCard = ({ item, loading, purpose }) => {
                 bgColor="green.100"
                 w="100%"
                 borderRadius="20px"
-                onClick={handleAddToCart}
+                item={item}
               />
             </Flex>
           </Flex>

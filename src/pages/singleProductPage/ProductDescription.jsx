@@ -5,7 +5,7 @@ import ProductPice from "../../components/product-card/ProductPice";
 import ProductQuantity from "./ProductQuantity";
 import InStock from "./InStock";
 import SizeSelected from "./SizeSelected";
-import AddToCartButton from "../../components/product-card/AddToCartButton";
+import { AddToCartButton } from "../../components/product-card/ProductCard";
 import BuyNowButton from "../../components/common/buttons/BuyNowButton";
 import PinCodeCheck from "./PinCodeCheck";
 
