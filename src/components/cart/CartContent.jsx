@@ -1,13 +1,15 @@
 import { Box, Flex, Image, Text, IconButton, Stack } from "@chakra-ui/react";
 import { FaTrash, FaPlus, FaMinus } from "react-icons/fa";
 import ProductQuantity from "../../pages/singleProductPage/ProductQuantity";
-import { removeFromCart } from "../../redux-toolkit/feautures/product/cartSlice";
+import { deleteCartItem, removeFromCart } from "../../redux-toolkit/feautures/product/cartSlice";
 import { useDispatch } from "react-redux";
 const CartItem = ({item}) => {
     const dispatcher=useDispatch()
-        const handleRemoveFromCart=()=>{
-            dispatcher(removeFromCart({id:item.id}))
+        const handleDeleteFromCart=()=>{
+            dispatcher(deleteCartItem({id:item.id}))
         }
+
+       
     return (
     <Stack
       w="100%"
@@ -48,14 +50,14 @@ const CartItem = ({item}) => {
           <span>{item.price}.00</span>
         </Text>
         <Text color="gray.500">pack of 1, {item.size}</Text>
-        <ProductQuantity fontSize="0.3rem" spacing={1} w="6rem" h="35px" />
+        <ProductQuantity productId={item.id} fontSize="0.3rem" spacing={1} w="6rem" h="35px" />
       </Stack>
       <Flex
         pos="absolute"
         right={{ base: "1.3rem", lg: "3rem" }}
         top={{ base: "1.8rem", lg: "3rem" }}
       >
-        <FaTrash style={{ fontSize: "1.3rem", color: "black" }} onClick={handleRemoveFromCart}/>
+        <FaTrash style={{ fontSize: "1.3rem", color: "black" }} onClick={handleDeleteFromCart}/>
       </Flex>
     </Stack>
   );

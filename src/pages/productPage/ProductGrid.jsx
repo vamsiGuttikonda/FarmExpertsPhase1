@@ -2,8 +2,11 @@ import { SimpleGrid } from '@chakra-ui/react'
 import React from 'react'
 import ProductCard from '../../components/product-card/ProductCard'
 import productData from '../../components/data/MockData.jsx';
+import { useSelector } from 'react-redux';
+import { selectFilteredProducts } from '../../redux-toolkit/feautures/product/productSlice.jsx';
 const ProductGrid = () => {
-  
+  const productsToShow=useSelector(selectFilteredProducts)
+    console.log(productsToShow);
   return (
     <SimpleGrid
     px={{base:'2',lg:'7'}}

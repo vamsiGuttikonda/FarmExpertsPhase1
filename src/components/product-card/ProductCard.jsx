@@ -4,7 +4,9 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   addToCart,
+  cartIsOpen,
   removeFromCart,
+  selectCartIsOpen,
   selectCartItems,
 } from "../../redux-toolkit/feautures/product/cartSlice";
 import ProductDescription from "./ProductDescription";
@@ -21,11 +23,13 @@ export const AddToCartButton = ({ item, ...props }) => {
     dispatch(
       addToCart({
         id: item.product_id,
+        name:item.product_name,
         image_url: item.image_url,
         size: item.size,
         price: item.price,
       })
     );
+    dispatch(cartIsOpen())
   };
 
   const handleRemoveFromCart = () => {

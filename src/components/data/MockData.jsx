@@ -79,7 +79,7 @@ let productData=[
   {
     "product_id": 103,
     "product_name": "honey",
-    "category": "soaps",
+    "category": "honey",
     "price": 387.33,
     "size": 1000,
     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
@@ -145,7 +145,7 @@ let productData=[
   {
     "product_id": 128,
     "product_name": "honey",
-    "category": "soaps",
+    "category": "honey",
     "price": 644.08,
     "size": 500,
     "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
@@ -189,7 +189,7 @@ let productData=[
   {
     "product_id": 120,
     "product_name": "honey",
-    "category": "bee wax",
+    "category": "honey",
     "price": 772.04,
     "size": 250,
     "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. a neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
