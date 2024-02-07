@@ -171,7 +171,7 @@ let productData=[
     "price": 930.53,
     "size": 500,
     "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum.a tellus.",
-    "image_url": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_url": "https://images.unsplash.com/photo-1615485737457-f07082c77813?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "bestseller": true,
     "recommended": true
   },
@@ -189,22 +189,22 @@ let productData=[
   {
     "product_id": 120,
     "product_name": "honey",
-    "category": "honey",
+    "category": "dry fruits",
     "price": 772.04,
     "size": 250,
     "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. a neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-    "image_url": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_url": "https://images.unsplash.com/photo-1615485737457-f07082c77813?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "bestseller": false,
     "recommended": false
   },
   {
     "product_id": 100,
     "product_name": "honey",
-    "category": "honey",
+    "category": "dry fruits",
     "price": 459.02,
     "size": 500,
     "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel a eget eros elementum pellentesque.",
-    "image_url": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_url": "https://images.unsplash.com/photo-1615485737457-f07082c77813?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "bestseller": false,
     "recommended": false
   },
@@ -222,11 +222,11 @@ let productData=[
   {
     "product_id": 112,
     "product_name": "honey",
-    "category": "honey",
+    "category": "dry fruits",
     "price": 667.78,
     "size": 1000,
     "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-    "image_url": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_url": "https://images.unsplash.com/photo-1615485737457-f07082c77813?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "bestseller": false,
     "recommended": false
   },
@@ -314,7 +314,7 @@ let productData=[
     "price": 930.4,
     "size": 500,
     "description": "In congue. Etiam justo. Etiam pretium iaculis justo.",
-    "image_url": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_url": "https://images.unsplash.com/photo-1615485737457-f07082c77813?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "bestseller": true,
     "recommended": true
   },

@@ -76,7 +76,7 @@ const ProductCard = ({ item, loading, purpose }) => {
             objectFit="cover"
           />
           <Flex direction="column" gap={{ base: "1", lg: "3" }}>
-            <ProductDescription name={item.product_name} weight={item.size} />
+            <ProductDescription id={item.product_id} name={item.product_name} weight={item.size} />
             {/* rating comp */}
 
             <RatingComponent ratingValue="4" />
