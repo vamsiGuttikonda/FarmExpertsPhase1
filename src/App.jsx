@@ -13,6 +13,7 @@ import 'slick-carousel/slick/slick.css'; // Import slick styles here
 import 'slick-carousel/slick/slick-theme.css';
 import ProductViewPage from './pages/singleProductPage/ProductViewPage'
 import CheckoutPage from './pages/CheckoutPage'
+import Footer from './components/common/Footer'
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         
       </Routes>
     </BrowserRouter>
+    <Footer/>
 
     </>
     
